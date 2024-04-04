@@ -105,6 +105,7 @@ public class SeleniumOperations {
 		 * Identify button 'Create account' and click to submit using Selenium API.
 		 */
 		driver.findElement(By.xpath("/html/body/div[2]/div/div[1]/div/div/form/div[12]/button")).click();
+		System.out.println("Clicked create account button");
 		sleep(1);
 
 		/*
@@ -166,6 +167,7 @@ public class SeleniumOperations {
 		 * Identify button 'Create account' and click to submit using Selenium API.
 		 */
 		driver.findElement(By.xpath("//*[@id=\"root\"]/main/div/div[1]/div/div[2]/div/form/div/div[3]/div/div/button")).click();
+		System.out.println("Clicked create account button");
 		sleep(1);
 
 		/*
@@ -173,6 +175,7 @@ public class SeleniumOperations {
 		 */
 		// Write code
 		saveScreenshot(driver);
+		System.out.println("Saved screenshot");
 
 		// Sleep a while
 		sleep(2);
