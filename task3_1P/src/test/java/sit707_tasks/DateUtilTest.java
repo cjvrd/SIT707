@@ -378,7 +378,7 @@ public class DateUtilTest {
 
     @Test
     public void test13B() {
-        // increment from 15/6/2024
+        // increment from 15/6/2024t
         DateUtil date = new DateUtil(15, 6, 2024);
         System.out.println("Jun15ShouldIncrementToJun16");
         date.increment();
