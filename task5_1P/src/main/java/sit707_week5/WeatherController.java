@@ -1,6 +1,7 @@
 package sit707_week5;
 
 import java.text.SimpleDateFormat;
+import java.time.Clock;
 import java.util.Arrays;
 import java.util.Date;
 import java.util.Random;
@@ -113,11 +114,14 @@ public class WeatherController {
 	 * Persist reported temperature to data store and return recorded time. 
 	 * @param hour
 	 * @param temperature
+	 * @param clock
 	 * @return
 	 */
-	public String persistTemperature(int hour, double temperature) {
-		SimpleDateFormat sdf = new SimpleDateFormat("H:m:s");
-		String savedTime = sdf.format(new Date());
+	//modify the class to take in a clock parameter
+	public String persistTemperature(int hour, double temperature, Clock clock) {
+
+		//get the clocks current time for the method
+		String savedTime = clock.instant().toString();
 		System.out.println("Temperature: " + temperature + " of hour: " + hour + ", saved at " + savedTime);
 		
 		// sleep a while to simulate a delay

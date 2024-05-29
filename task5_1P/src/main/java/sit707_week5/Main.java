@@ -18,9 +18,9 @@ public class Main
         System.out.println("Temperature avg: " + wController.getTemperatureAverageFromCache());
         System.out.println("Temperature at first hour: " + wController.getTemperatureForHour(1));
         
-        String persistTime = wController.persistTemperature(10, 23.2);
-        String now = new SimpleDateFormat("H:m:s").format(new Date());
-        System.out.println("Persist time: " + persistTime + ", now: " + now);
+        // String persistTime = wController.persistTemperature(10, 23.2);
+        // String now = new SimpleDateFormat("H:m:s").format(new Date());
+        // System.out.println("Persist time: " + persistTime + ", now: " + now);
         
         wController.close();
     }
